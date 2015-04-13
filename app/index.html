@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="myFotos">
+	<head>
+		<title>MyFotos</title>
+		<script type="text/javascript">
+			require('coffee-script/register');
+			require("./app.coffee");
+		</script>
+ 		<link rel="stylesheet" type="text/css" href="./node_modules/font-awesome/css/font-awesome.css">
+ 		<link rel="stylesheet" type="text/css" href="reset.css">
+		<link rel="stylesheet" type="text/css" href="global.css">
+		<script>
+			global.Win = require('nw.gui').Window.get();
+
+			var path = './app_modules/';
+			var fs = require('fs');
+
+			fs.watch(path, { recursive: true }, function() {
+				if (location)
+					require('nw.gui').Window.get().reload(3);
+			});
+		</script>
+	</head>
+	<body>
+		<app-header title="MyFotos"></app-header>
+		<foto-listing></foto-listing>
+	</body>
+</html>
