@@ -10,3 +10,10 @@ Desktop app based on node-webkit to organize and tweak your photos. Like Apple P
     cd app 
     npm install
     npm start
+
+## Thanks
+* copied some styles over from this [codepen by ozer](http://codepen.io/ozer/pen/ckwyd)
+* [node-webkit](http://nwjs.io) ~ webkit+nodejs for all plattforms
+* [lwip](https://github.com/EyalAr/lwip) ~ Light Weight Image Processor for NodeJS
+* [Font-Awesome](https://fortawesome.github.io/Font-Awesome/) ~ thx for the awesome icons :)
+* [lodash](https://lodash.com) ~ cant code without it!
